@@ -2,6 +2,14 @@
 
 Webplayground is the ultimate web application for managing profiles and blogs. With its user-friendly interface and powerful features, you can easily explore and create websites with ease.
 
+## Tech Stack
+- DJANGO
+- PostgreSQL
+- Bootstrap
+- HTML
+- CSS
+- JavaScript
+
 ## Features
 
 - Profile management: easily manage your personal profile and keep track of your online presence.
