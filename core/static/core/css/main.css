@@ -39,8 +39,8 @@ max-width: 40rem;
 
 .background{
     background: url("/static/core/img/background.png");
-    background-size: contain; 
-    background-repeat: repeat;
+    background-size: cover; 
+    background-repeat: no-repeat;
     background-position: center center;
     background-position: fixed; 
     height: 100vh; 
