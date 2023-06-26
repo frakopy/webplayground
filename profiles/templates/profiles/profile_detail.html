@@ -18,7 +18,7 @@
                     <!-- Agregando el boton de enviar mensaje -->
                     {% if request.user != profile.user %} <!-- Realizamos esta validacion para que no se cree el boton para el mismo usuario que esta logeado -->
                         <a href="{% url 'messenger:start' profile.user.username %}" class="btn btn-primary btn-sm btn-block mt-3">
-                        Enviar mensaje
+                        Send message
                         </a>
                     {% endif %}
                     </div>

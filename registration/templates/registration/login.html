@@ -8,25 +8,25 @@
         <div class="row mt-3">
         <div class="col-md-9 mx-auto mb-5">
             {% if 'register' in request.GET %}
-                <p style="color:green;">Usuario registrado correctamente, ya puedes identificarte.</p>
+                <p style="color:green;">User successfuly registered.</p>
             {% endif %}
             <form action="" method="post">{% csrf_token %}
-                <h3 class="mb-4">Iniciar sesión</h3>
+                <h3 class="mb-4">Login</h3>
                 {% if form.non_field_errors %}
-                    <p style="color:red">Usuario o contraseña incorrectos, prueba de nuevo.</p>
+                    <p style="color:red">Wrong user or password, try again.</p>
                 {% endif %}
                 <p>
                     <input type="text" name="username" autofocus maxlength="254" required
-                    id="id_username" class="form-control" placeholder="Nombre de usuario"/>
+                    id="id_username" class="form-control" placeholder="Username"/>
                 </p>
                 <p>
                     <input type="password" name="password" required
-                    id="id_password" class="form-control" placeholder="Contraseña"/>
+                    id="id_password" class="form-control" placeholder="Password"/>
                 </p>
-                <p><input type="submit" class="btn btn-primary btn-block" value="Acceder"></p>
+                <p><input type="submit" class="btn btn-primary btn-block" value="Login"></p>
             </form> 
             <p>
-                ¿Ha olvidado su clave? Puede restaurarla <a href="{% url 'password_reset' %}">aquí</a>.
+                ¿Forgot your password? you can restore <a href="{% url 'password_reset' %}">here</a>.
             </p>
         </div>
         </div>

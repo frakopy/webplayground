@@ -27,33 +27,33 @@
           <div class="collapse navbar-collapse" id="ned">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'home' %}">Inicio</a>
+                <a class="nav-link" href="{% url 'home' %}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'pages:pages' %}">Páginas</a>
+                <a class="nav-link" href="{% url 'pages:pages' %}">Pages</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'profiles' %}">Perfiles</a>
+                <a class="nav-link" href="{% url 'profiles' %}">Profiles</a>
               </li>    
             </ul>
             <ul class="navbar-nav">
               <li class="nav-item">
                   {% if not request.user.is_authenticated %}
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'login' %}">Acceder</a>
+                      <a class="nav-link" href="{% url 'login' %}">Login</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'signup' %}">Registro</a>
+                      <a class="nav-link" href="{% url 'signup' %}">Register</a>
                     </li>
                   {% else %}
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'messenger:list' %}">Mensajes</a>
+                      <a class="nav-link" href="{% url 'messenger:list' %}">Messages</a>
                     </li>   
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'profile' %}">Perfil</a>
+                      <a class="nav-link" href="{% url 'profile' %}">Profile</a>
                     </li>   
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'logout' %}">Salir</a>
+                      <a class="nav-link" href="{% url 'logout' %}">Exit</a>
                     </li>             
                   {% endif %}
                 </a>
@@ -70,35 +70,35 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-md-3 item">
-                        <h3>Servicios</h3>
+                        <h3>Services</h3>
                         <ul>
-                            <li><a href="#">Diseño web</a></li>
-                            <li><a href="#">Desarrollo</a></li>
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">Development</a></li>
                             <li><a href="#">Hosting</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
-                        <h3>Acerca de Nosotros</h3>
+                        <h3>About us</h3>
                         <ul>
-                            <li><a href="#">Compañia</a></li>
-                            <li><a href="#">Equipo</a></li>
-                            <li><a href="#">Carrera</a></li>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Career</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6 item text">
-                        <h3>Nombre de la Compañia</h3>
+                        <h3>Company name</h3>
                         <p>
-                          Playground es una empresa dedicada a proporcionar soluciones lúdicas y divertidas 
-                          para la comunidad. Con un equipo altamente capacitado y una pasión por el juego, 
-                          ofrecemos productos y servicios de alta calidad que aseguran horas de diversión y 
-                          entretenimiento. Ya sea para una fiesta en el hogar, un evento corporativo o un día 
-                          en el parque, Playground está a la vanguardia en la creación de experiencias únicas 
-                          y memorables para todas las edades. ¡Ven y juega con nosotros en Playground!
+                          Playground is a company dedicated to providing playful and fun solutions
+                          for the community. With a highly trained team and a passion for the game,
+                          We offer high quality products and services that ensure hours of fun and
+                          entertainment. Whether it is for a home party, a corporate event or a day
+                          in the park, Playground is at the forefront of creating unique experiences
+                          and memorable for all ages. Come and play with us at Playground!
                         </p>
                     </div>
                     <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
                 </div>
-                <p class="copyright">Company Name © 2018</p>
+                <p class="copyright">Webplaygound © 2023 by FrakoDev</p>
             </div>
         </footer>
       </div>

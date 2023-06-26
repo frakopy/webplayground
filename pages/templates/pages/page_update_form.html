@@ -10,14 +10,14 @@
             <div>
                 {% if 'ok' in request.GET %}
                 <p style="color:green;">
-                    Página editada correctamente. 
-                    <a href="{% url 'pages:page' page.id page.title|slugify %}">Haz clic aquí para ver el resultado</a>.
+                    Page successfuly updated. 
+                    <a href="{% url 'pages:page' page.id page.title|slugify %}">Click here to check the result</a>.
                 </p>
                 {% endif %}
                 <form action="" method="post">{% csrf_token %}
                     {{ form.as_p }}
                     <div class="text-center">
-                        <input type="submit" class="btn btn-primary btn-block" value="Actualizar página" />
+                        <input type="submit" class="btn btn-primary btn-block" value="Update Page" />
                     </div>
                 </form>
             </div>

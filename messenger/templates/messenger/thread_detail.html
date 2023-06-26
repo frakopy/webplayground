@@ -51,7 +51,7 @@
             <!-- Recorremos los miembros del hilo menos el propio request.user -->
             {% for user in thread.users.all %}
               {% if user != request.user %}       
-                <h4 class="mb-4">Mensajes con <a href="{% url 'profileDetail' user %} ">{{user}}</a></h4>
+                <h4 class="mb-4">Messages with <a href="{% url 'profileDetail' user %} ">{{user}}</a></h4>
               {% endif %}
             {% endfor %}
             <!-- Mostramos los mensajes en una capa que tiene un overflow vertical de 300 píxeles -->
@@ -70,8 +70,8 @@
               {% endfor %}
             </div>
             <!-- Aquí crearemos el formulario -->
-            <textarea id="content" class="form-control mb-2" rows="2" placeholder="Escribe tu mensaje aquí"></textarea>
-            <button id="send" class="btn btn-primary btn-sm btn-block" disabled>Enviar mensaje</button>
+            <textarea id="content" class="form-control mb-2" rows="2" placeholder="Write a message here"></textarea>
+            <button id="send" class="btn btn-primary btn-sm btn-block" disabled>Send message</button>
             <script>
               let send = document.getElementById("send");
               send.addEventListener("click", function(){

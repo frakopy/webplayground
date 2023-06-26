@@ -7,7 +7,7 @@
     <div class="container">
         <div class="row mt-3">
         <div class="col-md-9 mx-auto mb-5">
-            <h2>Perfiles</h2>
+            <h2>Profiles</h2>
             <div class="row">
                 {% for profile in profile_list %}
                     <div class="col-md-4 mt-2 mb-3 ">
@@ -20,7 +20,7 @@
                             {% endif %}
                             <p class="profile-data">
                                 <b>{{profile.user|truncatechars:"16"}}</b><br>
-                                <a href="{% url 'profileDetail' profile.user %}">Ver perfil</a>
+                                <a href="{% url 'profileDetail' profile.user %}">View Profile</a>
                             </p>
                             </div>
                         </div>
