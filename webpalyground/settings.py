@@ -65,9 +65,9 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'webpalyground.urls'
 
 
-CORS_ALLOWED_ORIGINS = ["https://your-domain"]
+CORS_ALLOWED_ORIGINS = ["https://webplayground-production.up.railway.app"]
 
-CSRF_TRUSTED_ORIGINS = ["https://https://your-domain"]
+CSRF_TRUSTED_ORIGINS = ["https://webplayground-production.up.railway.app"]
 
 
 TEMPLATES = [
