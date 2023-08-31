@@ -24,5 +24,5 @@ Webplayground is the ultimate web application for managing profiles and blogs. W
 
 ## Getting started
 
-To get started with Webplayground, simply sign up for a free account and start creating! Whether you're a beginner or an experienced web developer, Webplayground has everything you need to build a great website.
+To get started with Webplayground, simply sign up for a free account and start creating! visiting our website https://webplayground-production.up.railway.app/
 
